@@ -6,7 +6,6 @@ import {
   UserPermission,
   getUserWithId,
   updateProductsQuantity,
-  sendNotifications,
 } from '../utils'
 import { CartProduct, Product } from '../generated/prisma'
 
@@ -244,8 +243,6 @@ const createSale = async (_, args, ctx: Context, info) => {
       })
 
       await Promise.all(productsToUpdate)
-
-      sendNotifications(ctx)
 
       return sale
     })
