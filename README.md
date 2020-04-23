@@ -1,7 +1,5 @@
-# my-app-server
-The server of [my-app-universal][my-app-universal]
-
-[my-app-universal]: https://github.com/cesaraaron/my-app-universal
+# Inventory-App Server
+The server of [inventory-app][2]
 
 # Getting started
 ### Prerequisites
@@ -11,7 +9,7 @@ The server of [my-app-universal][my-app-universal]
 
 ```sh
 # Clone the repo
-$ git clone https://github.com/cesaraaron/my-app-server && cd my-app-server
+$ git clone https://github.com/cesaraaron/inventory-app-server && cd inventory-app-server
 
 # Install dependencies
 $ yarn install
@@ -73,7 +71,7 @@ $ yarn dev
 
 ```sh
 # Clone the repo
-$ git clone https://github.com/cesaraaron/my-app-server && cd my-app-server
+$ git clone https://github.com/cesaraaron/inventory-app-server && cd inventory-app-server
 
 
 # Install dependencies
@@ -90,7 +88,7 @@ $ yarn build
 $ cp .env .env.production && vim .env.production
 
 # Run the graphql-yoga server in the background
-$ dotenv -e .env.production -- pm2 start dist/index.js --name my-app-server
+$ dotenv -e .env.production -- pm2 start dist/index.js --name inventory-app-server
 ```
 
 # Built with
@@ -103,3 +101,5 @@ This project is licensed under the MIT License - see the [LICENSE.md](./LICENSE.
 
 
 [1]: https://www.prisma.io/docs/tutorials/deploy-prisma-servers/digital-ocean-(manual)-texoo6aemu/
+
+[2]: https://github.com/cesaraaron/inventory-app
